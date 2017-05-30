@@ -1,15 +1,22 @@
 import { TestBed, async } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
 import { CrimsonTitleComponent } from '../crimson-title/crimson-title.component';
+import { NavigationComponent } from '../navigation/navigation.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        CrimsonTitleComponent
+        CrimsonTitleComponent,
+        NavigationComponent
       ],
+      imports: [
+        RouterTestingModule
+      ]
     }).compileComponents();
   }));
 
