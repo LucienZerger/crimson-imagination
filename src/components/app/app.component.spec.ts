@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
-import { CrimsonTitleComponent } from './crimson-title/crimson-title.component';
+import { CrimsonTitleComponent } from '../crimson-title/crimson-title.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
